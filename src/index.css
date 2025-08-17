@@ -227,6 +227,14 @@ All colors MUST be HSL.
     @apply mb-1;
   }
 
+  .preview-content a {
+    @apply text-indigo-600 hover:text-indigo-800 underline transition-colors;
+  }
+
+  .dark .preview-content a {
+    @apply text-indigo-400 hover:text-indigo-300;
+  }
+
   /* Toolbar styles */
   .toolbar-button {
     @apply inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors;
