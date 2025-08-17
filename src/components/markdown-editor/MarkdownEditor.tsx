@@ -14,7 +14,7 @@ export interface MarkdownEditorProps {
 }
 
 export const MarkdownEditor: React.FC<MarkdownEditorProps> = ({
-  initialValue = '# Welcome to Markdown Editor\n\nStart typing your markdown here...\n\n## Features\n\n- **Live Preview**: See your markdown rendered in real-time\n- **Syntax Highlighting**: Beautiful code highlighting\n- **Resizable Panels**: Adjust the layout to your preference\n- **Auto-save**: Your work is automatically saved\n\n```javascript\nconst greeting = "Hello, World!";\nconsole.log(greeting);\n```\n\n> This is a blockquote example\n\nEnjoy writing!',
+  initialValue = '# Welcome to Markdown Editor\n\nStart typing your markdown here...\n\n## Features\n\n- **Live Preview**: See your markdown rendered in real-time\n- **Syntax Highlighting**: Beautiful code highlighting\n- **Resizable Panels**: Adjust the layout to your preference\n- **Auto-save**: Your work is automatically saved\n\n```javascript\nconst greeting = "Hello, World!";\nconsole.log(greeting);\n```\n\n> This is a blockquote example\n\n## Learn More\n\nVisit [Markdown Guide](https://www.markdownguide.org/) for comprehensive documentation.\n\nEnjoy writing!',
   className = '',
 }) => {
   const [content, setContent] = useState(initialValue);
