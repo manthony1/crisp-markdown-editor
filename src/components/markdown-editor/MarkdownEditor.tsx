@@ -34,7 +34,9 @@ export const MarkdownEditor: React.FC<MarkdownEditorProps> = ({
   useEffect(() => {
     const savedContent = localStorage.getItem('markdown-editor-content');
     if (savedContent && savedContent !== initialValue) {
-      setContent(savedContent);
+      // Clear saved content to show the new initial value with link
+      localStorage.removeItem('markdown-editor-content');
+      setContent(initialValue);
     }
   }, [initialValue]);
 
